@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href=""styles.css" rel="stylesheet">
+    <script src="script.js" async></script>
+    <title>Can you match?</title>
+</head>
+<body>
+    <h1 class="title">Can you match?</h1>
+    <div class="overlay-text visible">
+        Click to Start
+    </div>
+    <div id="game-over-text" class="overlay-text">
+        Game Over :(
+        <span class="overlay-text-small">Click to Restart</span>
+    </div>
+    <div id="victory-text" class="overlay-text">
+        VICTORY :D
+        <span class="overlay-text-small">Click to Restart</span>
+    </div>
+    <div class="container">
+        <div class="info-container">
+            <div class="info">
+                Time <span id="time-remaining">100</span>
+            </div>
+            <div class="info">
+                Flips <span id="flips">0</span>
+            </div>
+            <div class="info">
+                Match <span id="match">0</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="smoke smoke-top-left" src="Images/Smoke.png">
+                <img class="smoke smoke-top-right" src="Images/Smoke.png">
+                <img class="smoke smoke-bottom-left" src="Images/Smoke.png">
+                <img class="smoke smoke-bottom-right" src="Images/Smoke.png">
+                <img class="rocket" src="Images/Rocket.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="Images/Earth.png">
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-back card-face">
+            <img class="smoke smoke-top-left" src="Images/Smoke.png">
+            <img class="smoke smoke-top-right" src="Images/Smoke.png">
+            <img class="smoke smoke-bottom-left" src="Images/Smoke.png">
+            <img class="smoke smoke-bottom-right" src="Images/Smoke.png">
+            <img class="rocket" src="Images/Rocket.png">
+        </div>
+        <div class="card-front card-face">
+            <img class="card-value" src="Images/Jupiter.png">
+    </div>
+</div>
+<div class="card">
+    <div class="card-back card-face">
+        <img class="smoke smoke-top-left" src="Images/Smoke.png">
+        <img class="smoke smoke-top-right" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-left" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-right" src="Images/Smoke.png">
+        <img class="rocket" src="Images/Rocket.png">
+    </div>
+    <div class="card-front card-face">
+        <img class="card-value" src="Images/Mars.png">
+</div>
+</div>
+<div class="card">
+    <div class="card-back card-face">
+        <img class="smoke smoke-top-left" src="Images/Smoke.png">
+        <img class="smoke smoke-top-right" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-left" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-right" src="Images/Smoke.png">
+        <img class="rocket" src="Images/Rocket.png">
+    </div>
+    <div class="card-front card-face">
+        <img class="card-value" src="Images/Mercury.png">
+</div>
+</div>
+<div class="card">
+    <div class="card-back card-face">
+        <img class="smoke smoke-top-left" src="Images/Smoke.png">
+        <img class="smoke smoke-top-right" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-left" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-right" src="Images/Smoke.png">
+        <img class="rocket" src="Images/Rocket.png">
+    </div>
+    <div class="card-front card-face">
+        <img class="card-value" src="Images/Neptune.png">
+</div>
+</div>
+<div class="card">
+    <div class="card-back card-face">
+        <img class="smoke smoke-top-left" src="Images/Smoke.png">
+        <img class="smoke smoke-top-right" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-left" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-right" src="Images/Smoke.png">
+        <img class="rocket" src="Images/Rocket.png">
+    </div>
+    <div class="card-front card-face">
+        <img class="card-value" src="Images/Pluto.png">
+</div>
+</div>
+<div class="card">
+    <div class="card-back card-face">
+        <img class="smoke smoke-top-left" src="Images/Smoke.png">
+        <img class="smoke smoke-top-right" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-left" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-right" src="Images/Smoke.png">
+        <img class="rocket" src="Images/Rocket.png">
+    </div>
+    <div class="card-front card-face">
+        <img class="card-value" src="Images/Saturn.png">
+</div>
+</div>
+<div class="card">
+    <div class="card-back card-face">
+        <img class="smoke smoke-top-left" src="Images/Smoke.png">
+        <img class="smoke smoke-top-right" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-left" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-right" src="Images/Smoke.png">
+        <img class="rocket" src="Images/Rocket.png">
+    </div>
+    <div class="card-front card-face">
+        <img class="card-value" src="Images/Sun.png">
+</div>
+</div>
+<div class="card">
+    <div class="card-back card-face">
+        <img class="smoke smoke-top-left" src="Images/Smoke.png">
+        <img class="smoke smoke-top-right" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-left" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-right" src="Images/Smoke.png">
+        <img class="rocket" src="Images/Rocket.png">
+    </div>
+    <div class="card-front card-face">
+        <img class="card-value" src="Images/Uranus.png">
+</div>
+</div>
+<div class="card">
+    <div class="card-back card-face">
+        <img class="smoke smoke-top-left" src="Images/Smoke.png">
+        <img class="smoke smoke-top-right" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-left" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-right" src="Images/Smoke.png">
+        <img class="rocket" src="Images/Rocket.png">
+    </div>
+    <div class="card-front card-face">
+        <img class="card-value" src="Images/Venus.png">
+</div>
+</div>
+<div class="card">
+    <div class="card-back card-face">
+        <img class="smoke smoke-top-left" src="Images/Smoke.png">
+        <img class="smoke smoke-top-right" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-left" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-right" src="Images/Smoke.png">
+        <img class="rocket" src="Images/Rocket.png">
+    </div>
+    <div class="card-front card-face">
+        <img class="card-value" src="Images/Earth.png">
+</div>
+</div>
+<div class="card">
+    <div class="card-back card-face">
+        <img class="smoke smoke-top-left" src="Images/Smoke.png">
+        <img class="smoke smoke-top-right" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-left" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-right" src="Images/Smoke.png">
+        <img class="rocket" src="Images/Rocket.png">
+    </div>
+    <div class="card-front card-face">
+        <img class="card-value" src="Images/Jupiter.png">
+</div>
+</div>
+<div class="card">
+    <div class="card-back card-face">
+        <img class="smoke smoke-top-left" src="Images/Smoke.png">
+        <img class="smoke smoke-top-right" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-left" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-right" src="Images/Smoke.png">
+        <img class="rocket" src="Images/Rocket.png">
+    </div>
+    <div class="card-front card-face">
+        <img class="card-value" src="Images/Mars.png">
+</div>
+</div>
+<div class="card">
+    <div class="card-back card-face">
+        <img class="smoke smoke-top-left" src="Images/Smoke.png">
+        <img class="smoke smoke-top-right" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-left" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-right" src="Images/Smoke.png">
+        <img class="rocket" src="Images/Rocket.png">
+    </div>
+    <div class="card-front card-face">
+        <img class="card-value" src="Images/Mercury.png">
+</div>
+</div>
+<div class="card">
+    <div class="card-back card-face">
+        <img class="smoke smoke-top-left" src="Images/Smoke.png">
+        <img class="smoke smoke-top-right" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-left" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-right" src="Images/Smoke.png">
+        <img class="rocket" src="Images/Rocket.png">
+    </div>
+    <div class="card-front card-face">
+        <img class="card-value" src="Images/Neptune.png">
+</div>
+</div>
+<div class="card">
+    <div class="card-back card-face">
+        <img class="smoke smoke-top-left" src="Images/Smoke.png">
+        <img class="smoke smoke-top-right" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-left" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-right" src="Images/Smoke.png">
+        <img class="rocket" src="Images/Rocket.png">
+    </div>
+    <div class="card-front card-face">
+        <img class="card-value" src="Images/Pluto.png">
+</div>
+</div>
+<div class="card">
+    <div class="card-back card-face">
+        <img class="smoke smoke-top-left" src="Images/Smoke.png">
+        <img class="smoke smoke-top-right" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-left" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-right" src="Images/Smoke.png">
+        <img class="rocket" src="Images/Rocket.png">
+    </div>
+    <div class="card-front card-face">
+        <img class="card-value" src="Images/Saturn.png">
+</div>
+</div>
+<div class="card">
+    <div class="card-back card-face">
+        <img class="smoke smoke-top-left" src="Images/Smoke.png">
+        <img class="smoke smoke-top-right" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-left" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-right" src="Images/Smoke.png">
+        <img class="rocket" src="Images/Rocket.png">
+    </div>
+    <div class="card-front card-face">
+        <img class="card-value" src="Images/Sun.png">
+</div>
+</div>
+<div class="card">
+    <div class="card-back card-face">
+        <img class="smoke smoke-top-left" src="Images/Smoke.png">
+        <img class="smoke smoke-top-right" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-left" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-right" src="Images/Smoke.png">
+        <img class="rocket" src="Images/Rocket.png">
+    </div>
+    <div class="card-front card-face">
+        <img class="card-value" src="Images/Uranus.png">
+</div>
+</div>
+<div class="card">
+    <div class="card-back card-face">
+        <img class="smoke smoke-top-left" src="Images/Smoke.png">
+        <img class="smoke smoke-top-right" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-left" src="Images/Smoke.png">
+        <img class="smoke smoke-bottom-right" src="Images/Smoke.png">
+        <img class="rocket" src="Images/Rocket.png">
+    </div>
+    <div class="card-front card-face">
+        <img class="card-value" src="Images/Venus.png">
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>
